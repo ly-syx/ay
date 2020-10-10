@@ -1,0 +1,510 @@
+HUAWEI@ly MINGW64 /d/学习/git
+$ ls
+README.md
+
+HUAWEI@ly MINGW64 /d/学习/git
+$ ls
+README.md  新建文本文档.txt
+
+HUAWEI@ly MINGW64 /d/学习/git
+$ ls
+README.md  新建文本文档.txt
+
+HUAWEI@ly MINGW64 /d/学习/git
+$ cd..
+bash: cd..: command not found
+
+HUAWEI@ly MINGW64 /d/学习/git
+$ git add .
+fatal: not a git repository (or any of the parent directories): .git
+
+HUAWEI@ly MINGW64 /d/学习/git
+$ git init
+Initialized empty Git repository in D:/瀛︿範/git/.git/
+
+HUAWEI@ly MINGW64 /d/学习/git (master)
+$ git add .
+
+HUAWEI@ly MINGW64 /d/学习/git (master)
+$ git commit -m"first commit"
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'HUAWEI@ly.(none)')
+
+HUAWEI@ly MINGW64 /d/学习/git (master)
+$ git config user.name"ly"
+
+HUAWEI@ly MINGW64 /d/学习/git (master)
+$ git config user.email"2629978422@qq.com"
+
+HUAWEI@ly MINGW64 /d/学习/git (master)
+$ ^C
+
+HUAWEI@ly MINGW64 /d/学习/git (master)
+$ git config --global user.email"2629978422@qq.com"
+
+HUAWEI@ly MINGW64 /d/学习/git (master)
+$ git config --global user.name "ly"
+
+HUAWEI@ly MINGW64 /d/学习/git (master)
+$ git config --global uset.email "2629978422@qq.com"
+
+HUAWEI@ly MINGW64 /d/学习/git (master)
+$ git commit -m "first commit"
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'HUAWEI@ly.(none)')
+
+HUAWEI@ly MINGW64 /d/学习/git (master)
+$ git config --global user.name "ly"
+
+HUAWEI@ly MINGW64 /d/学习/git (master)
+$ git config --global user.email"2629978422@qq.com"
+
+HUAWEI@ly MINGW64 /d/学习/git (master)
+$ git commit -m "first commit"
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'HUAWEI@ly.(none)')
+
+HUAWEI@ly MINGW64 /d/学习/git (master)
+$ git config --global --list
+user.name=ly
+uset.email=2629978422@qq.com
+
+HUAWEI@ly MINGW64 /d/学习/git (master)
+$ git commit -m "first commit"
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'HUAWEI@ly.(none)')
+
+HUAWEI@ly MINGW64 /d/学习/git (master)
+$ git config --global --list
+user.name=ly
+uset.email=2629978422@qq.com
+
+HUAWEI@ly MINGW64 /d/学习/git (master)
+$ git config --global user.email "2629978422@qq.com"
+
+HUAWEI@ly MINGW64 /d/学习/git (master)
+$ git commit -m "first commit"
+[master (root-commit) 00fd22e] first commit
+ 2 files changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 README.md
+ create mode 100644 "\346\226\260\345\273\272\346\226\207\346\234\254\346\226\207\346\241\243.txt"
+
+HUAWEI@ly MINGW64 /d/学习/git (master)
+$ git add .
+
+HUAWEI@ly MINGW64 /d/学习/git (master)
+$ git commit -m "Welcome to Whuhan"
+[master 294185a] Welcome to Whuhan
+ 1 file changed, 1 insertion(+)
+
+HUAWEI@ly MINGW64 /d/学习/git (master)
+$ git log
+commit 294185a072c216759eb8de16362f1b7c24c7ade5 (HEAD -> master)
+Author: ly <2629978422@qq.com>
+Date:   Sat Oct 10 19:58:43 2020 +0800
+
+    Welcome to Whuhan
+
+commit 00fd22e616663aef9a66aa4f2a62ab70ecdf2645
+Author: ly <2629978422@qq.com>
+Date:   Sat Oct 10 19:57:13 2020 +0800
+
+    first commit
+
+HUAWEI@ly MINGW64 /d/学习/git (master)
+$ git reset --hard HEAD^
+HEAD is now at 00fd22e first commit
+
+HUAWEI@ly MINGW64 /d/学习/git (master)
+$ git reflog
+00fd22e (HEAD -> master) HEAD@{0}: reset: moving to HEAD^
+294185a HEAD@{1}: commit: Welcome to Whuhan
+00fd22e (HEAD -> master) HEAD@{2}: commit (initial): first commit
+
+HUAWEI@ly MINGW64 /d/学习/git (master)
+$ hard HEAD 294185a
+bash: hard: command not found
+
+HUAWEI@ly MINGW64 /d/学习/git (master)
+$ git push https://github.com/ly-syx/ly
+fatal: The current branch master has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream https://github.com/ly-syx/ly master
+
+
+HUAWEI@ly MINGW64 /d/学习/git (master)
+$ git romote -- help
+git: 'romote' is not a git command. See 'git --help'.
+
+The most similar command is
+        remote
+
+HUAWEI@ly MINGW64 /d/学习/git (master)
+$ git remote -- help
+error: Unknown subcommand: help
+usage: git remote [-v | --verbose]
+   or: git remote add [-t <branch>] [-m <master>] [-f] [--tags | --no-tags] [--mirror=<fetch|push>] <name> <url>
+   or: git remote rename <old> <new>
+   or: git remote remove <name>
+   or: git remote set-head <name> (-a | --auto | -d | --delete | <branch>)
+   or: git remote [-v | --verbose] show [-n] <name>
+   or: git remote prune [-n | --dry-run] <name>
+   or: git remote [-v | --verbose] update [-p | --prune] [(<group> | <remote>)...]
+   or: git remote set-branches [--add] <name> <branch>...
+   or: git remote get-url [--push] [--all] <name>
+   or: git remote set-url [--push] <name> <newurl> [<oldurl>]
+   or: git remote set-url --add <name> <newurl>
+   or: git remote set-url --delete <name> <url>
+
+    -v, --verbose         be verbose; must be placed before a subcommand
+
+
+HUAWEI@ly MINGW64 /d/学习/git (master)
+$ git remote --help
+
+HUAWEI@ly MINGW64 /d/学习/git (master)
+$ git remote add origin master : git remote remove <name>
+bash: syntax error near unexpected token `newline'
+
+HUAWEI@ly MINGW64 /d/学习/git (master)
+$ : git remote remove <name>
+bash: syntax error near unexpected token `newline'
+
+HUAWEI@ly MINGW64 /d/学习/git (master)
+$ git remote add origin master https://github.com/ly-syx/ly
+usage: git remote add [<options>] <name> <url>
+
+    -f, --fetch           fetch the remote branches
+    --tags                import all tags and associated objects when fetching
+                          or do not fetch any tag at all (--no-tags)
+    -t, --track <branch>  branch(es) to track
+    -m, --master <branch>
+                          master branch
+    --mirror[=(push|fetch)]
+                          set up remote as a mirror to push to or fetch from
+
+
+HUAWEI@ly MINGW64 /d/学习/git (master)
+$ git remote add https://github.com/ly-syx/ly
+usage: git remote add [<options>] <name> <url>
+
+    -f, --fetch           fetch the remote branches
+    --tags                import all tags and associated objects when fetching
+                          or do not fetch any tag at all (--no-tags)
+    -t, --track <branch>  branch(es) to track
+    -m, --master <branch>
+                          master branch
+    --mirror[=(push|fetch)]
+                          set up remote as a mirror to push to or fetch from
+
+
+HUAWEI@ly MINGW64 /d/学习/git (master)
+$ git remote add origin https://github.com/ly-syx/ly
+
+HUAWEI@ly MINGW64 /d/学习/git (master)
+$ ls
+'~$节轻松愉快的讲稿.docx'   ch01-2.zip   README.md                       第一节轻松愉快的讲稿.docx
+ ch01.zip                   ch01-3.zip  '第一节轻松愉快的讲稿(1).docx'   新建文本文档.txt
+
+HUAWEI@ly MINGW64 /d/学习/git (master)
+$ cd ..
+
+HUAWEI@ly MINGW64 /d/学习
+$ cd gig
+bash: cd: gig: No such file or directory
+
+HUAWEI@ly MINGW64 /d/学习
+$ cd git
+
+HUAWEI@ly MINGW64 /d/学习/git (master)
+$ find
+.
+./.git
+./.git/COMMIT_EDITMSG
+./.git/config
+./.git/description
+./.git/HEAD
+./.git/hooks
+./.git/hooks/applypatch-msg.sample
+./.git/hooks/commit-msg.sample
+./.git/hooks/fsmonitor-watchman.sample
+./.git/hooks/post-update.sample
+./.git/hooks/pre-applypatch.sample
+./.git/hooks/pre-commit.sample
+./.git/hooks/pre-merge-commit.sample
+./.git/hooks/pre-push.sample
+./.git/hooks/pre-rebase.sample
+./.git/hooks/pre-receive.sample
+./.git/hooks/prepare-commit-msg.sample
+./.git/hooks/update.sample
+./.git/index
+./.git/info
+./.git/info/exclude
+./.git/logs
+./.git/logs/HEAD
+./.git/logs/refs
+./.git/logs/refs/heads
+./.git/logs/refs/heads/master
+./.git/objects
+./.git/objects/00
+./.git/objects/00/fd22e616663aef9a66aa4f2a62ab70ecdf2645
+./.git/objects/29
+./.git/objects/29/4185a072c216759eb8de16362f1b7c24c7ade5
+./.git/objects/39
+./.git/objects/39/6b9e099d73ca3aedcc70f8482b603d9d69fbd5
+./.git/objects/7a
+./.git/objects/7a/b6b3adcfb78ad3ce24cc9d172dfedbed8c8d09
+./.git/objects/cd
+./.git/objects/cd/8c11455eed71a0874fa78dbe9b2b03f35ea438
+./.git/objects/e6
+./.git/objects/e6/9de29bb2d1d6434b8b29ae775ad8c2e48c5391
+./.git/objects/info
+./.git/objects/pack
+./.git/ORIG_HEAD
+./.git/refs
+./.git/refs/heads
+./.git/refs/heads/master
+./.git/refs/tags
+./ch01-2.zip
+./ch01-3.zip
+./ch01.zip
+./README.md
+./~$节轻松愉快的讲稿.docx
+./新建文本文档.txt
+./第一节轻松愉快的讲稿(1).docx
+./第一节轻松愉快的讲稿.docx
+
+HUAWEI@ly MINGW64 /d/学习/git (master)
+$ git add .
+
+HUAWEI@ly MINGW64 /d/学习/git (master)
+$ git commit -m "update"
+[master 6d3084f] update
+ 6 files changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 ch01-2.zip
+ create mode 100644 ch01-3.zip
+ create mode 100644 ch01.zip
+ create mode 100644 "~$\350\212\202\350\275\273\346\235\276\346\204\211\345\277\253\347\232\204\350\256\262\347\250\277.docx"
+ create mode 100644 "\347\254\254\344\270\200\350\212\202\350\275\273\346\235\276\346\204\211\345\277\253\347\232\204\350\256\262\347\250\277(1).docx"
+ create mode 100644 "\347\254\254\344\270\200\350\212\202\350\275\273\346\235\276\346\204\211\345\277\253\347\232\204\350\256\262\347\250\277.docx"
+
+HUAWEI@ly MINGW64 /d/学习/git (master)
+$ git pull origin master
+
+fatal: couldn't find remote ref master
+
+HUAWEI@ly MINGW64 /d/学习/git (master)
+$
+
+HUAWEI@ly MINGW64 /d/学习/git (master)
+$ git remote add origin https://github.com/ly-syx/ly.git
+fatal: remote origin already exists.
+
+HUAWEI@ly MINGW64 /d/学习/git (master)
+$ git remote remove
+usage: git remote remove <name>
+
+
+HUAWEI@ly MINGW64 /d/学习/git (master)
+$ git remmote remove
+.git/                         ch01-2.zip                    第一节轻松愉快的讲稿(1).docx
+~$节轻松愉快的讲稿.docx       ch01-3.zip                    第一节轻松愉快的讲稿.docx
+ch01.zip                      README.md                     新建文本文档.txt
+
+HUAWEI@ly MINGW64 /d/学习/git (master)
+$ git remmote remove
+.git/                         ch01-2.zip                    第一节轻松愉快的讲稿(1).docx
+~$节轻松愉快的讲稿.docx       ch01-3.zip                    第一节轻松愉快的讲稿.docx
+ch01.zip                      README.md                     新建文本文档.txt
+
+HUAWEI@ly MINGW64 /d/学习/git (master)
+$ git remmote remove
+.git/                         ch01-2.zip                    第一节轻松愉快的讲稿(1).docx
+~$节轻松愉快的讲稿.docx       ch01-3.zip                    第一节轻松愉快的讲稿.docx
+ch01.zip                      README.md                     新建文本文档.txt
+
+HUAWEI@ly MINGW64 /d/学习/git (master)
+$ git remote remove origin
+
+HUAWEI@ly MINGW64 /d/学习/git (master)
+$ ch
+Chakra.dll               chattr.exe               chkwudrv.dll             ChtBopomofoDS.dll        chxinputrouter.dll
+Chakradiag.dll           chcon.exe                chmod.exe                ChtCangjieDS.dll         chxranker.dll
+Chakrathunk.dll          chcp.com                 choice.exe               ChtHkStrokeDS.dll        CHxReadingStringIME.dll
+changepk.exe             CheckNetIsolation.exe    chown.exe                ChtQuickDS.dll
+charmap.exe              chgrp.exe                chroot.exe               ChxAPDS.dll
+chartv.dll               chkdsk.exe               ChsStrokeDS.dll          ChxDecoder.dll
+ChatApis.dll             chkntfs.exe              ChtAdvancedDS.dll        ChxHAPDS.dll
+
+HUAWEI@ly MINGW64 /d/学习/git (master)
+$ ch
+Chakra.dll               chattr.exe               chkwudrv.dll             ChtBopomofoDS.dll        chxinputrouter.dll
+Chakradiag.dll           chcon.exe                chmod.exe                ChtCangjieDS.dll         chxranker.dll
+Chakrathunk.dll          chcp.com                 choice.exe               ChtHkStrokeDS.dll        CHxReadingStringIME.dll
+changepk.exe             CheckNetIsolation.exe    chown.exe                ChtQuickDS.dll
+charmap.exe              chgrp.exe                chroot.exe               ChxAPDS.dll
+chartv.dll               chkdsk.exe               ChsStrokeDS.dll          ChxDecoder.dll
+ChatApis.dll             chkntfs.exe              ChtAdvancedDS.dll        ChxHAPDS.dll
+
+HUAWEI@ly MINGW64 /d/学习/git (master)
+$ git remote add origin https://github.com/ly-syx/ly.git
+
+HUAWEI@ly MINGW64 /d/学习/git (master)
+$ git pull origin master
+fatal: couldn't find remote ref master
+
+HUAWEI@ly MINGW64 /d/学习/git (master)
+$ git pull origin main
+fatal: HttpRequestException encountered.
+   发送请求时出错。
+error: unable to read askpass response from 'D:/Program Files (x86)/Git/mingw64/libexec/git-core/git-gui--askpass'
+Username for 'https://github.com':
+
+HUAWEI@ly MINGW64 /d/学习/git (master)
+$ git reflog
+6d3084f (HEAD -> master) HEAD@{0}: commit: update
+00fd22e HEAD@{1}: reset: moving to HEAD^
+294185a HEAD@{2}: commit: Welcome to Whuhan
+00fd22e HEAD@{3}: commit (initial): first commit
+
+HUAWEI@ly MINGW64 /d/学习/git (master)
+$ git reset --hard 294185a
+Unlink of file '绗竴鑺傝交鏉炬剦蹇殑璁茬.docx' failed. Should I try again? (y/n) y
+Unlink of file '绗竴鑺傝交鏉炬剦蹇殑璁茬.docx' failed. Should I try again? (y/n) y
+Unlink of file '绗竴鑺傝交鏉炬剦蹇殑璁茬.docx' failed. Should I try again? (y/n) y
+Unlink of file '绗竴鑺傝交鏉炬剦蹇殑璁茬.docx' failed. Should I try again? (y/n) y
+Unlink of file '绗竴鑺傝交鏉炬剦蹇殑璁茬.docx' failed. Should I try again? (y/n) y
+Unlink of file '绗竴鑺傝交鏉炬剦蹇殑璁茬.docx' failed. Should I try again? (y/n) n
+warning: unable to unlink '绗竴鑺傝交鏉炬剦蹇殑璁茬.docx': Invalid argument
+HEAD is now at 294185a Welcome to Whuhan
+
+HUAWEI@ly MINGW64 /d/学习/git (master)
+$ git add .
+
+HUAWEI@ly MINGW64 /d/学习/git (master)
+$ git commit -m "docx added"
+[master 7d0276f] docx added
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 "\347\254\254\344\270\200\350\212\202\350\275\273\346\235\276\346\204\211\345\277\253\347\232\204\350\256\262\347\250\277.docx"
+
+HUAWEI@ly MINGW64 /d/学习/git (master)
+$ git reset --hard 29185a
+fatal: ambiguous argument '29185a': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+
+HUAWEI@ly MINGW64 /d/学习/git (master)
+$ git reflog
+7d0276f (HEAD -> master) HEAD@{0}: commit: docx added
+294185a HEAD@{1}: reset: moving to 294185a
+6d3084f HEAD@{2}: commit: update
+00fd22e HEAD@{3}: reset: moving to HEAD^
+294185a HEAD@{4}: commit: Welcome to Whuhan
+00fd22e HEAD@{5}: commit (initial): first commit
+
+HUAWEI@ly MINGW64 /d/学习/git (master)
+$ git reset --hard 294185a
+Unlink of file '绗竴鑺傝交鏉炬剦蹇殑璁茬.docx' failed. Should I try again? (y/n) n
+warning: unable to unlink '绗竴鑺傝交鏉炬剦蹇殑璁茬.docx': Invalid argument
+HEAD is now at 294185a Welcome to Whuhan
+
+HUAWEI@ly MINGW64 /d/学习/git (master)
+$ git reset --hard 294185a
+HEAD is now at 294185a Welcome to Whuhan
+
+HUAWEI@ly MINGW64 /d/学习/git (master)
+$ git remote push origin main
+error: Unknown subcommand: push
+usage: git remote [-v | --verbose]
+   or: git remote add [-t <branch>] [-m <master>] [-f] [--tags | --no-tags] [--mirror=<fetch|push>] <name> <url>
+   or: git remote rename <old> <new>
+   or: git remote remove <name>
+   or: git remote set-head <name> (-a | --auto | -d | --delete | <branch>)
+   or: git remote [-v | --verbose] show [-n] <name>
+   or: git remote prune [-n | --dry-run] <name>
+   or: git remote [-v | --verbose] update [-p | --prune] [(<group> | <remote>)...]
+   or: git remote set-branches [--add] <name> <branch>...
+   or: git remote get-url [--push] [--all] <name>
+   or: git remote set-url [--push] <name> <newurl> [<oldurl>]
+   or: git remote set-url --add <name> <newurl>
+   or: git remote set-url --delete <name> <url>
+
+    -v, --verbose         be verbose; must be placed before a subcommand
+
+
+HUAWEI@ly MINGW64 /d/学习/git (master)
+$ git remote push origin master
+error: Unknown subcommand: push
+usage: git remote [-v | --verbose]
+   or: git remote add [-t <branch>] [-m <master>] [-f] [--tags | --no-tags] [--mirror=<fetch|push>] <name> <url>
+   or: git remote rename <old> <new>
+   or: git remote remove <name>
+   or: git remote set-head <name> (-a | --auto | -d | --delete | <branch>)
+   or: git remote [-v | --verbose] show [-n] <name>
+   or: git remote prune [-n | --dry-run] <name>
+   or: git remote [-v | --verbose] update [-p | --prune] [(<group> | <remote>)...]
+   or: git remote set-branches [--add] <name> <branch>...
+   or: git remote get-url [--push] [--all] <name>
+   or: git remote set-url [--push] <name> <newurl> [<oldurl>]
+   or: git remote set-url --add <name> <newurl>
+   or: git remote set-url --delete <name> <url>
+
+    -v, --verbose         be verbose; must be placed before a subcommand
+
+
+HUAWEI@ly MINGW64 /d/学习/git (master)
+$ git remote add .
+usage: git remote add [<options>] <name> <url>
+
+    -f, --fetch           fetch the remote branches
+    --tags                import all tags and associated objects when fetching
+                          or do not fetch any tag at all (--no-tags)
+    -t, --track <branch>  branch(es) to track
+    -m, --master <branch>
+                          master branch
+    --mirror[=(push|fetch)]
+                          set up remote as a mirror to push to or fetch from
+
+
+HUAWEI@ly MINGW64 /d/学习/git (master)
